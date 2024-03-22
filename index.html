@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenue sur mon portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a80dcd658e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header id="home" class="site-header">
+      <nav id="menu" class="site-header__nav hidden">
+        <ul class="nav-list">
+          <li class="nav-list__item nav-list__item--home">
+            <a href="#home">Accueil</a>
+          </li>
+          <li class="nav-list__item nav-list__item--about">
+            <a href="#about">À propos de moi</a>
+          </li>
+          <li class="nav-list__item nav-list__item--skills">
+            <a href="#skills">Compétences</a>
+          </li>
+          <li class="nav-list__item nav-list__item--projects">
+            <a href="#projects">Projets</a>
+          </li>
+          <li class="nav-list__item nav-list__item--contact">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button id="button-menu" class="icon site-header__button">
+        <i style="color: rgba(21, 71, 52, 1)" class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <main class="main-content">
+      <section id="home" class="home">
+        <div class="home__color">
+          <h2 class="home__subtitle">Hey there, I'm</h2>
+          <h1 class="home__title">Jennifer</h1>
+          <h2 class="home__subtitle-profession">A FULL STACK DEV WEB</h2>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <h2 class="about__title">À PROPOS DE MOI</h2>
+        <div class="about__container">
+          <div class="about__description-container">
+            <p class="description-container__first-paragraph">
+              Intéressée par le monde en perpétuelle évolution de développement
+              web, je suis en quête de nouvelles opportunités pour affiner mes
+              compétences et élargir mes connaissances. Actuellement en
+              formation en développement web Full Stack chez O'Clock, je veux
+              ensuite mettre en pratique mes acquis dans un contexte
+              professionnel au travers d'une alternance. Dans ce domaine qui
+              repose sur la collaboration et le communication, je suis
+              impatiente de rejoindre une équipe où je pourrais apporter ma
+              contribution tout en continuant à apprendre et à me développer.
+            </p>
+            <!-- <p class="description-container__second-paragraph">
+              Si vous souhaitez me contacter ou en savoir plus:
+            </p> -->
+            <div class="about__contact">
+              <div class="contact-details">
+                <span class="details-items">Appelez-moi</span>
+                <a class="details-link" href="tel:+33638054464"
+                  >06 38 05 44 64</a
+                >
+              </div>
+              <div class="contact-details">
+                <span class="details-items">Envoyez-moi un mail </span>
+                <a
+                  class="details-link"
+                  href="mailto:jennifer.boyer.28@gmail.com"
+                  >jennifer.boyer.28@gmail.com</a
+                >
+              </div>
+              <div class="contact-details">
+                <span class="details-items"
+                  >Jettez un coup d'oeil à mon github ...
+                </span>
+                <a
+                  class="details-link"
+                  href="https://github.com/BoyerJennifer"
+                  target="_blank"
+                  >github</a
+                >
+              </div>
+              <div class="contact-details">
+                <span class="details-items">... et à mon linkedIn </span>
+                <a
+                  class="details-link"
+                  href="https://www.linkedin.com/in/jennifer-boyer-devweb/"
+                  target="_blank"
+                  >linkedin</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <img class="about__img" src="./docs/Photo CV.png" alt="" />
+        </div>
+        <div class="about__resume">
+          <h2 class="resume-title">ACCÈDER À MON CV</h2>
+          <p class="resume-description">
+            Pour découvrir en détail mon parcours et mes compétences, n'hésitez
+            pas à télécharger mon CV. Voici un aperçu de mon expérience.
+          </p>
+          <button id="download-button" class="resume-button">
+            TÉLÉCHARGER <i class="fa-solid fa-download resume-icon"></i>
+          </button>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <h2 class="skills__title">LANGAGES ET OUTILS</h2>
+        <div class="skills__container">
+          <div class="skill-infos">
+            <img class="skill-logo" src="./docs/img/icones/html5.png" alt="" />
+            <h4 class="skill-title">HTML 5</h4>
+          </div>
+          <div class="skill-infos">
+            <img class="skill-logo" src="./docs/img/icones/css3.png" alt="" />
+            <h4 class="skill-title">CSS 3</h4>
+          </div>
+          <div class="skill-infos">
+            <img
+              class="skill-logo"
+              src="./docs/img/icones/javascript.png"
+              alt=""
+            />
+            <h4 class="skill-title">JavaScript</h4>
+          </div>
+          <div class="skill-infos">
+            <img
+              class="skill-logo"
+              src="./docs/img/icones/markdown.png"
+              alt=""
+            />
+            <h4 class="skill-title">MarkDown</h4>
+          </div>
+          <div class="skill-infos">
+            <img class="skill-logo" src="./docs/img/icones/github.png" alt="" />
+            <h4 class="skill-title">GitHub</h4>
+          </div>
+          <div class="skill-infos">
+            <img class="skill-logo" src="./docs/img/icones/nodejs.png" alt="" />
+            <h4 class="skill-title">Node.js</h4>
+          </div>
+          <div class="skill-infos">
+            <img class="skill-logo" src="./docs/img/icones/react.png" alt="" />
+            <h4 class="skill-title">React</h4>
+          </div>
+          <div class="skill-infos">
+            <img class="skill-logo" src="./docs/img/icones/strapi.png" alt="" />
+            <h4 class="skill-title">Strapi</h4>
+          </div>
+          <div class="skill-infos">
+            <img class="skill-logo" src="./docs/img/icones/vite.png" alt="" />
+            <h4 class="skill-title">Vite</h4>
+          </div>
+          <div class="skill-infos">
+            <img class="skill-logo" src="./docs/img/icones/nginx.png" alt="" />
+            <h4 class="skill-title">NGINX</h4>
+          </div>
+          <div class="skill-infos">
+            <img
+              class="skill-logo"
+              src="./docs/img/icones/postgres.png"
+              alt=""
+            />
+            <h4 class="skill-title">PostgreSQL</h4>
+          </div>
+          <div class="skill-infos">
+            <img
+              class="skill-logo"
+              src="./docs/img/icones/mongodb.png"
+              alt=""
+            />
+            <h4 class="skill-title">MongoDB</h4>
+          </div>
+          <div class="skill-infos">
+            <img
+              class="skill-logo"
+              src="./docs/img/icones/graphql.png"
+              alt=""
+            />
+            <h4 class="skill-title">GraphQL</h4>
+          </div>
+          <div class="skill-infos">
+            <img class="skill-logo" src="./docs/img/icones/docker.png" alt="" />
+            <h4 class="skill-title">Docker</h4>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <h2 class="projects__title">MES PROJETS</h2>
+        <div class="projects__container">
+          <div class="project">
+            <img class="project__img" src="./docs/img/WIP.jpg" alt="" />
+            <h3 class="project__title">Title</h3>
+            <p class="project__description">Work In Progress ...</p>
+          </div>
+          <div class="project">
+            <img class="project__img" src="./docs/img/WIP.jpg" alt="" />
+            <h3 class="project__title">Title</h3>
+            <p class="project__description">Work In Progress ...</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h2 class="contact__title">CONTACTEZ-MOI</h2>
+        <form
+          action="https://formspree.io/f/xwkgnyvp"
+          class="contact__form"
+          method="POST"
+        >
+          <fieldset class="form-fieldset">
+            <div class="fieldset__details">
+              <label for="name" class="fieldset__label">Nom</label>
+              <input
+                type="text"
+                class="fieldset__input"
+                id="name"
+                name="name"
+                required
+                placeholder="Ex. Martin Dupont"
+              />
+            </div>
+            <div class="fieldset__details">
+              <label for="email" class="fieldset__label">Email</label>
+              <input
+                type="email"
+                class="fieldset__input"
+                id="email"
+                name="email"
+                required
+                placeholder="votremail@mail.com"
+              />
+            </div>
+            <div class="fieldset__details">
+              <label for="message" class="fieldset__label">Message</label>
+              <textarea
+                class="fieldset__textarea"
+                name="message"
+                id="message"
+                required
+                placeholder="Bonjour Jennifer, je vous contacte car ..."
+              ></textarea>
+            </div>
+          </fieldset>
+          <button class="form-button" type="submit">
+            SUBMIT
+            <i class="fa-solid fa-paper-plane submit__icon"></i>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"></footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
