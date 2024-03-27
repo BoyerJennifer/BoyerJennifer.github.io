@@ -8,7 +8,7 @@ function listenToClickOnMenu() {
 }
 
 function listenToClickOnMenuLinks() {
-  const links = document.querySelectorAll(".nav-list__item");
+  const links = document.querySelectorAll(".nav-list__item a");
   links.forEach((link) => {
     link.addEventListener("click", () => {
       console.log(link);
