@@ -244,7 +244,7 @@
 .project__img {
   display: block;
   border-radius: 0.5rem;
-  padding: 1rem 5rem 1rem 5rem;
+  padding: 1rem 6rem 1rem 6rem;
   /* width: 50%; */
   /* margin: 0 auto; */
 }
@@ -252,7 +252,7 @@
 .project__title {
   color: white;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
@@ -264,6 +264,7 @@
   width: 50%;
   display: block;
   margin: 0 auto;
+  font-size: 1.5rem;
 }
 
 .contact__title {
@@ -285,6 +286,7 @@
   font-weight: 700;
   padding-bottom: 0.5rem;
   padding-left: var(--margin-padding-base);
+  font-size: 1.25rem;
 }
 
 .fieldset__input::placeholder,
@@ -300,6 +302,7 @@
   margin-bottom: 0.5rem;
   border-radius: 0.25rem;
   padding: 0.25rem;
+  font-size: 1rem;
 }
 
 .fieldset__textarea {
