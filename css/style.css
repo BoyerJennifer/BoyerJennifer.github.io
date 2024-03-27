@@ -42,7 +42,7 @@
 }
 
 .home {
-  background-image: url("../docs/img/background.jpg");
+  background-image: url("../docs/img/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -176,7 +176,7 @@
 }
 
 .skills {
-  background-color: rgb(200, 200, 200);
+  background-color: white;
   padding-bottom: var(--margin-padding-base);
 }
 
@@ -235,8 +235,9 @@
 .project__img {
   display: block;
   border-radius: 0.5rem;
-  width: 50%;
-  margin: 0 auto;
+  padding: 1rem 5rem 1rem 5rem;
+  /* width: 50%; */
+  /* margin: 0 auto; */
 }
 
 .project__title {
@@ -273,8 +274,13 @@
 .fieldset__label {
   color: var(--main-color);
   font-weight: 700;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
   padding-left: var(--margin-padding-base);
+}
+
+.fieldset__input::placeholder,
+.fieldset__textarea::placeholder {
+  padding-left: 0.5rem;
 }
 
 .fieldset__input,
@@ -296,14 +302,15 @@
   color: white;
   border: none;
   border-radius: 0.25rem;
-  margin: 0 2rem;
-  width: calc(100% - 4rem);
-  padding: 1rem 0;
   font-size: 1.25rem;
   text-align: center;
   margin-bottom: 4rem;
   cursor: pointer;
   transition: all 0.3s;
+  width: 40%;
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem 0;
 }
 .fa-paper-plane {
   color: white;
@@ -439,8 +446,7 @@
   }
 
   .contact {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
   }
 
   */ .about {
@@ -490,9 +496,9 @@
     padding: 1rem;
   }
   .form-button {
-    width: 49.25%;
+    width: 10%;
     display: block;
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 1rem;
   }
 }
