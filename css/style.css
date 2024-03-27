@@ -154,7 +154,7 @@
   border-radius: 0.25rem;
   padding: 0.75rem 1rem;
   border: 2px solid var(--main-color);
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 .resume-icon {
@@ -168,8 +168,7 @@
   color: white;
   border: 1px solid white;
   cursor: pointer;
-  padding: 1.25rem 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 
 .resume-button:hover .resume-icon {
