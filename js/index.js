@@ -1,28 +1,29 @@
-const button = document.querySelector("#button-menu");
-button.addEventListener("click", () => {
-  const menu = document.querySelector("#menu");
-  menu.classList.toggle("hidden");
-});
+import { closeMenu, downloadCV } from "./utils.js";
 
-function downloadCV() {
-  const downloadLink = document.createElement("a");
-  downloadLink.href =
-    "https://drive.google.com/uc?export=download&id=1_eO-DJ0uUZMaKG0sN38RiSN9qJMXsgPe";
-  downloadLink.download = "CV-Boyer-Jennifer";
-
-  // Ajouter le lien à la page et le cliquer
-  document.body.appendChild(downloadLink);
-  downloadLink.click();
-
-  document.body.removeChild(downloadLink);
+function listenToClickOnMenu() {
+  const button = document.querySelector("#button-menu");
+  button.addEventListener("click", () => {
+    closeMenu();
+  });
 }
 
-const downloadButton = document.querySelector("#download-button");
-downloadButton.addEventListener("click", downloadCV);
+function listenToClickOnMenuLinks() {
+  const links = document.querySelectorAll(".nav-list__item");
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      console.log(link);
+      closeMenu();
+    });
+  });
+}
 
-let previousActiveNavItem;
+function listenToClickOnDownloadResume() {
+  const downloadButton = document.querySelector("#download-button");
+  downloadButton.addEventListener("click", downloadCV);
+}
 
 function setActiveLink() {
+  let previousActiveNavItem;
   const sections = document.querySelectorAll("section");
 
   sections.forEach((section) => {
@@ -52,5 +53,9 @@ function setActiveLink() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", setActiveLink);
+setActiveLink();
+listenToClickOnMenu();
+listenToClickOnMenuLinks();
+listenToClickOnDownloadResume();
+
 document.addEventListener("scroll", setActiveLink);
