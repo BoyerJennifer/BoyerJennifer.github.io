@@ -260,7 +260,7 @@
 .project__description {
   color: white;
   text-align: justify;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
   width: 50%;
   display: block;
   margin: 0 auto;
@@ -344,6 +344,26 @@
 
 .footer__copyright {
   color: white;
+}
+
+.project__link {
+  display: block;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.project__link-title {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 900;
+  display: block;
+  padding-bottom: 8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.project__logo-github {
+  width: 5.5rem;
+  background-color: white;
+  border-radius: 5rem;
 }
 
 @media only screen and (min-width: 1024px) {
